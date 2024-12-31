@@ -1,5 +1,5 @@
 'use client'
-import NavBar from "../component/NavBar";
+/// (Biar tidak ada Nav Bar) import NavBar from "../component/NavBar";
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 
@@ -60,9 +60,9 @@ function Livecount() {
                 <div className={`nomor w-full text-black h-[15%] flex`}>
                   <div className="nomor m-auto font-extrabold text-[18pt]">01</div>
                 </div>
-                <div className="gambar w-full h-[70%]  bg-[url('/bright.png')] bg-cover bg-center"></div>
+                <div className="gambar w-full h-[70%]  bg-[url('/poggy.png')] bg-cover bg-center"></div>
                 <div className={`nama text-black w-full h-[15%]  flex`}>
-                  <h2 className="nama m-auto text-[12pt] font-Montserrat">Bright C. Kusuma</h2>
+                  <h2 className="nama m-auto text-[12pt] font-Montserrat">Poggy M. Gultom</h2>
                 </div>
               </div>
             </div>

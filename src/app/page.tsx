@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Loading from "@/app/component/Loading";
 import Cookies from "js-cookie";
-import NavBar from "@/app/component/NavBar";
+/// import NavBar from "@/app/component/NavBar";
 import ErrorDialogBox from "./component/ErrorDialogBox";
 
 export default function Auth() {
@@ -114,7 +114,8 @@ export default function Auth() {
     <main className="flex w-[100vw] h-[100vh] bg-Orange">
       {/* Bagian lain dari komponen */}
       <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/hero.png')] bg-cover flex">
-        <div className="blankspace h-full w-[calc(100%-720px)]"></div>
+        <div className="blankspace h-full w-[calc(100%-720px)]"/>
+        <div className="blankspace h-full w-[20%]"></div>
         <div className="loginspace h-full w-[720px] flex">
           <div className="logincontainer animate-popup m-auto block pt-10 pb-10 w-[350px] md:w-[400px] h-[500px] rounded-3xl bg-[rgba(220,255,203,0.7)] lg:bg-[rgba(220,255,203,0.0)] transition-all ease-in-out duration-1000">
             <div className="title leading-tight w-full text-center text-[46pt] font-extrabold text-black font-Montserrat">
@@ -160,7 +161,7 @@ export default function Auth() {
         </div>
       </div>
       <Loading condition={LoadingCondition} />
-      <NavBar data={cookieValue} />
+      {/* <NavBar data={cookieValue} />  */} 
       <ErrorDialogBox condition={ErrorStatus} errormessage={ErrorMessage}/>
     </main>
   );
