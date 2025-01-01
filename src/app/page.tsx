@@ -115,7 +115,6 @@ export default function Auth() {
       {/* Bagian lain dari komponen */}
       <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/hero.png')] bg-cover flex">
         <div className="blankspace h-full w-[calc(100%-720px)]"/>
-        <div className="blankspace h-full w-[20%]"></div>
         <div className="loginspace h-full w-[720px] flex">
           <div className="logincontainer animate-popup m-auto block pt-10 pb-10 w-[350px] md:w-[400px] h-[500px] rounded-3xl bg-[rgba(220,255,203,0.7)] lg:bg-[rgba(220,255,203,0.0)] transition-all ease-in-out duration-1000">
             <div className="title leading-tight w-full text-center text-[46pt] font-extrabold text-black font-Montserrat">
