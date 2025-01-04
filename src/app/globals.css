@@ -28,3 +28,56 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* 2024_13223048 */
+
+/* filepath: /d:/Fronted-PEMIRA-HME-ITB-2024/src/app/globals.css */
+@font-face {
+  font-family: 'Algerian';
+  src: url('/fonts/algerian.woff2') format('woff2'),
+       url('/fonts/algerian.woff') format('woff'),
+       url('/fonts/algerian.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-Algerian {
+  font-family: 'Algerian', sans-serif;
+}
+
+.ButtonText {
+  background: linear-gradient(90.03deg, #FFC045 0.03%, #997329 128.96%);
+  width: 200px;
+  height: 53px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0.7;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 33.03px;
+  text-align: center;
+  color: #292216;
+  ; 
+}
+
+.RegularText {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 30.67px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.NavBarText {
+  font-family: 'Abhaya Libre ExtraBold';
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: auto;
+}

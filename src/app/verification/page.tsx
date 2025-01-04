@@ -106,12 +106,12 @@ import { useEffect, useState } from "react";
 //   return ( 
 //     <main className="flex w-[100vw] h-[100vh] bg-Orange">
 //       {/* Bagian lain dari komponen */}
-//       <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/bg1.png')] bg-cover bg-center flex">
+//       <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover bg-center flex">
 //        <div className="loadingContainer w-[250px] h-fit m-auto block">
 //         <div className="image">
 //           <Image 
-//             src={"/petir_merah.png"} 
-//             alt={"petir merah"}
+//             src={"/hmeball.png"} 
+//             alt={"hmeball"}
 //             width={250}
 //             height={250}
 //             priority>
@@ -119,10 +119,9 @@ import { useEffect, useState } from "react";
 //           </Image>
 //         </div>
 //         <div className="loadingbarcont w-[250px] h-[50px] flex">
-//           <div className="loadingbar m-auto h-[20px] overflow-hidden w-full bg-white">
-//             <div className={`progress relative ${progress} h-full w-full overflow-hidden rounded-sm transition-all ease-in-out duration-200`}>
-//               <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#D7FF38] to-[#a18721] rounded-full animate-slowspin m-auto"></div>
-//             </div>
+//           <div className="loadingbar m-auto h-[30px] overflow-hidden w-full bg-white">
+//             <div className={`progress relative ${progress} h-full w-full overflow-hidden rounded-sm transition-all ease-in-out duration-220`}>
+//                <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#77684C] to-[#BA9E68] rounded-full animate-slowspin m-auto"></div>
 //           </div>
 //         </div>
 //        </div>
@@ -177,24 +176,24 @@ function VerificationPage() {
   }, []);
 
   return (
-    <main className="flex w-[100vw] h-[100vh] bg-Orange">
-      <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/bg1.png')] bg-cover bg-center flex">
-        <div className="loadingContainer w-[250px] h-fit m-auto block">
-          <div className="image">
+    <main className="flex w-[100vw] h-[100vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
+      <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover bg-center flex">
+        <div className="loadingContainer w-fit h-fit m-auto block">
+            <div className="image rounded-full overflow-hidden">
             <Image
-              src={"/petir_merah.png"}
-              alt={"petir merah"}
+              src={"/hmeball.png"}
+              alt={"hmeball"}
               width={250}
               height={250}
               priority
             />
-          </div>
-          <div className="loadingbarcont w-[250px] h-[50px] flex">
-            <div className="loadingbar m-auto h-[20px] overflow-hidden w-full bg-white">
+            </div>
+            <div className="loadingbarcont w-[250px] h-[50px] flex rounded-full overflow-hidden self-center">
+            <div className="loadingbar m-auto h-[30px] overflow-hidden w-full bg-color: bg-gradient-to-r from-[#F8E5C1] to-[#F8E5C1]">
               <div
-                className={`progress relative ${progress} h-full w-full overflow-hidden rounded-sm transition-all ease-in-out duration-200`}
+                className={`progress relative ${progress} h-full w-full overflow-hidden rounded-sm transition-all ease-in-out duration-220`}
               >
-                <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#D7FF38] to-[#a18721] rounded-full animate-slowspin m-auto"></div>
+                <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#77684C] to-[#BA9E68] rounded-full animate-slowspin m-auto"></div>
               </div>
             </div>
           </div>

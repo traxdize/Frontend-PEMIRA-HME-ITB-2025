@@ -1,12 +1,12 @@
 'use client'
-/// (Biar tidak ada Nav Bar) import NavBar from "../component/NavBar";
+import NavBar from "../component/NavBar";
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 
 function Livecount() {
-  // const [ChampID, setChampID] = useState<string | undefined>(
-  //   Cookies.get("ChampID")
-  // );
+ const [ChampID, setChampID] = useState<string | undefined>(
+   Cookies.get("ChampID")
+   );
   const [jumlah, setJumlah] = useState(0);
 
   useEffect(() => {
@@ -36,9 +36,9 @@ function Livecount() {
 
 
   return ( 
-    <main className="flex w-[100vw] min-h-full h-fit sm:min-h-0 sm:h-[100vh] bg-Orange">
+    <main className="flex w-[100vw] h-[150vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
       {/* Bagian lain dari komponen */}
-      <div className="Background Hero w-full min-h-full h-fit sm:min-h-0 sm:h-[100vh] m-auto overflow-hidden bg-[url('/bg1.png')] bg-cover bg-center flex">
+      <div className="Background Hero w-full min-h-full h-fit sm:min-h-0 sm:h-[150vh] m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover bg-center flex">
         <div className="livecount animate-popup m-auto block pt-10 pb-10 w-[500px] md:w-[700px] h-fit rounded-3xl transition-all ease-in-out duration-1000">
           <div className="tittlecontainer w-full h-[70px] flex">
             <div className="wrapper flex m-auto w-fit h-[60px]">
@@ -92,7 +92,7 @@ function Livecount() {
           </div>
         </div>
       </div>
-      {/* <NavBar data={ChampID}/> */}
+      <NavBar data={ChampID}/> 
     </main> 
   );
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Loading from "@/app/component/Loading";
 import Cookies from "js-cookie";
-/// import NavBar from "@/app/component/NavBar";
+import NavBar from "@/app/component/NavBar";
 import ErrorDialogBox from "./component/ErrorDialogBox";
 
 export default function Auth() {
@@ -111,19 +111,19 @@ export default function Auth() {
   };
 
   return (
-    <main className="flex w-[100vw] h-[100vh] bg-Orange">
+    <main className="flex w-[100vw] h-[100vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
       {/* Bagian lain dari komponen */}
-      <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/hero.png')] bg-cover flex">
+      <div className="Background Hero w-full h-full m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover flex">
         <div className="blankspace h-full w-[calc(100%-720px)]"/>
         <div className="loginspace h-full w-[720px] flex">
-          <div className="logincontainer animate-popup m-auto block pt-10 pb-10 w-[350px] md:w-[400px] h-[500px] rounded-3xl bg-[rgba(220,255,203,0.7)] lg:bg-[rgba(220,255,203,0.0)] transition-all ease-in-out duration-1000">
-            <div className="title leading-tight w-full text-center text-[46pt] font-extrabold text-black font-Montserrat">
+          <div className="logincontainer animate-popup m-auto block pt-12 pb-18 w-[350px] md:w-[500px] h-[400px] rounded-3xl  transition-all ease-in-out duration-6000"> {/* Warna textbox agak jelek sini aku perbaiki bg-[rgba(181,126,75,0.31)] lg:bg-[rgba(220,255,203,0.0)] */}
+            <div className="title leading-tight w-full text-center text-[60pt] font-extrabold text-[#F8E5C1] font-Algerian">
               PEMIRA HME ITB
             </div>
-            <div className="maincontent h-fit relative top-[-158px] block">
-              <div className="title leading-tight w-full text-center text-[46pt] font-extrabold text-[#B3403D] font-Montserrat">
-                PEMIRA HME ITB
-              </div>
+            <div className="maincontent h-fit relative top-[-205px] block">
+            <div className="title leading-tight w-full text-center text-[60pt] font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-[#221D11] via-[#221D11] to-[#A38855] font-Algerian">
+              PEMIRA HME ITB
+            </div>
               <form
                 onSubmit={handleSubmit}
                 className="inputSection block p-4 mt-[20px]"
@@ -131,7 +131,7 @@ export default function Auth() {
                 <div className="username w-full flex pt-2 pb-2">
                   <input
                     type="text"
-                    className="username w-[85%] m-auto p-2 text-black rounded-lg font-Montserrat"
+                    className="username w-[85%] m-auto p-2 text-black rounded-lg font-['Abhaya_Libre_ExtraBold']"
                     placeholder="Username"
                     value={username}
                     onChange={handleUsernameChange}
@@ -140,7 +140,7 @@ export default function Auth() {
                 <div className="pass w-full flex pt-2">
                   <input
                     type="password"
-                    className="password w-[85%] m-auto p-2 text-black rounded-lg font-Montserrat"
+                    className="password w-[85%] m-auto p-2 text-black rounded-lg font-['Abhaya_Libre_ExtraBold']"
                     placeholder="Password"
                     value={password}
                     onChange={handlePasswordChange}
@@ -148,19 +148,20 @@ export default function Auth() {
                 </div>
                 <div className="submitsection w-full flex mt-8">
                   <button
-                    type="submit"
-                    className="button m-auto font-bold font-Montserrat pt-2 pb-2 p-6 bg-[#D99A4E] rounded-lg"
+                  type="submit"
+                  className="button m-auto ButtonText pt-2 pb-2 px-6 text-black rounded-lg bg-[#B3403D] hover:bg-[#8A2C2A] transition-colors duration-300"
                   >
-                    LOGIN
+                  LOGIN
                   </button>
                 </div>
+
               </form>
             </div>
           </div>
         </div>
       </div>
       <Loading condition={LoadingCondition} />
-      {/* <NavBar data={cookieValue} />  */} 
+      <NavBar data={cookieValue} />  
       <ErrorDialogBox condition={ErrorStatus} errormessage={ErrorMessage}/>
     </main>
   );

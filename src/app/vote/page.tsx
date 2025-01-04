@@ -107,9 +107,9 @@ import { stringify } from "querystring";
 //   }
 
 //   return (
-//     <main className="flex w-[100vw] h-[100vh] bg-Orange">
+//     <main className="flex w-[100vw] h-[100vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
 //       {/* Bagian lain dari komponen */}
-//       <div className="Background Hero w-full h-full m-auto overflow-auto bg-[url('/bg1.png')] bg-cover bg-center flex">
+//       <div className="Background Hero w-full h-full m-auto overflow-auto bg-[url('/mainbg.png')] bg-cover bg-center flex">
 //         <div className={`voteform w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] min-h-[80vh] h-fit m-auto mt-[20vh] shadow-2xl block p-5 sm:p-7 md:p-16 pt-10 bg-gradient-to-b from-white to-[#ccedba] via-white ${popupAnimation}`}>
 //           <div className="title block w-full text-center text-black font-Montserrat font-bold text-[13pt] sm:text-[18pt]">
 //             <h1 className="">SURAT SUARA</h1>
@@ -221,9 +221,9 @@ function Vote() {
   
   
   return (
-    <main className="flex w-[100vw] h-[100vh] bg-Orange">
-      <div className="Background Hero w-full h-full m-auto overflow-auto bg-[url('/bg1.png')] bg-cover bg-center flex">
-        <div className={`voteform w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] min-h-[80vh] h-fit m-auto mt-[20vh] shadow-2xl block p-5 sm:p-7 md:p-16 pt-10 bg-gradient-to-b from-white to-[#ccedba] via-white ${popupAnimation}`}>
+    <main className="flex w-[100vw] h-[100vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
+      <div className="Background Hero w-full h-full m-auto overflow-auto bg-[url('/mainbg.png')] bg-cover bg-center flex">
+        <div className={`voteform w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] min-h-[80vh] h-fit m-auto mt-[20vh] shadow-2xl block p-5 sm:p-7 md:p-16 pt-10 bg-gradient-to-b from-white to-[#d8a44b00] via-white ${popupAnimation}`}>
           <div className="title block w-full text-center text-black font-Montserrat font-bold text-[13pt] sm:text-[18pt]">
             <h1>SURAT SUARA</h1>
             <h1>PEMIRA HME ITB</h1>
@@ -239,7 +239,7 @@ function Vote() {
                 </div>
                 <div className="gambar w-full h-[70%] border-solid border-[1.5px] border-black bg-[url('/bright.png')] bg-cover bg-center"></div>
                 <div className={`nama ${styleCard1} w-full h-[15%] border-solid border-[1.5px] border-black flex`}>
-                  <h2 className="nama m-auto text-[15pt] font-Montserrat">Bright C. Kusuma</h2>
+                  <h2 className="nama m-auto text-[15pt] font-Montserrat">Poggy M. Gultom</h2>
                 </div>
               </div>
             </div>
