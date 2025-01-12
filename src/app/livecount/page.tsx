@@ -4,6 +4,8 @@ import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 
 function Livecount() {
+ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+ const API_TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;
  const [ChampID, setChampID] = useState<string | undefined>(
    Cookies.get("ChampID")
    );
@@ -13,7 +15,7 @@ function Livecount() {
     const fetchData = async () => {
       try {
         // Melakukan GET request
-        const response = await fetch("https://backend-pemira-hme2023.vercel.app/api/live_count_total");
+        const response = await fetch(`${API_BASE_URL}/api/live_count_total`);
         // Mengubah response menjadi JSON
         const data = await response.json();
         // Handle data
