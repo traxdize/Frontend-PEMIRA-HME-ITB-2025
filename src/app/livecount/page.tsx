@@ -88,14 +88,14 @@ function Livecount() {
             <div className="wrapper m-auto h-fit w-[300px] p-1">
               <h1 className="judul w-full h-fit text-center text-[#552624] font-Algerian font-extrabold text-[24pt]">TOTAL SUARA</h1>
               <h1 className="judul w-full h-fit text-center text-[#552624] font-Algerian font-extrabold text-[40pt]">{jumlah}</h1>
-              <div className="loadingbar m-auto h-[20px] overflow-hidden w-full bg-[#997329] drop-shadow-md">
+              <div className="loadingbar text-center m-auto h-[20px] overflow-hidden w-full bg-[#997329] drop-shadow-md">
                 <div
                   className="progress relative h-full bg-gradient-to-r from-yellow-400 to-yellow-600"
                   style={{
                     width: `${jumlahPercentage}%`,
                     transition: 'width 0.5s ease-in-out',
                   }}
-                ></div>
+                >{jumlahPercentage}%</div>
               </div>
             </div>
           </div>
