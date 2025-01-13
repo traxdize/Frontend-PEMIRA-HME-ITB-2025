@@ -5,6 +5,8 @@ import Loading from "@/app/component/Loading";
 import Cookies from "js-cookie";
 import NavBar from "@/app/component/NavBar";
 import ErrorDialogBox from "./component/ErrorDialogBox";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;
 
 export default function Auth() {
 
@@ -71,7 +73,7 @@ export default function Auth() {
     try {
       // Melakukan POST request
       const response = await fetch(
-        "https://backend-pemira-hme2023.vercel.app/api/login",
+        `${API_BASE_URL}/api/login`,
         {
           method: "POST",
           headers: {
