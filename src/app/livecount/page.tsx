@@ -48,10 +48,10 @@ function Livecount() {
           <div className="tittlecontainer w-full h-[70px] flex">
             <div className="wrapper flex m-auto w-fit h-[60px]">
               <div className="dotsection w-[60px] h-full flex">
-                <div className="dot w-[60%] h-[60%] bg-[#B3403D] m-auto rounded-md animate-pulse"></div>
+                <div className="dot w-[60%] h-[60%] bg-[#731d1a] m-auto rounded-md animate-pulse"></div>
               </div>
               <div className="textSection h-full w-[200px] flex">
-                <h1 className="livecount m-auto text-[#B3403D] text-[36px] font-Algerian font-extrabold">Live Count</h1>
+                <h1 className="livecount m-auto text-[#731d1a] text-[36px] font-Algerian font-extrabold">Live Count</h1>
               </div>
             </div>
           </div>
