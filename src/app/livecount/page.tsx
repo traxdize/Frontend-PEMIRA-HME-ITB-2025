@@ -6,10 +6,12 @@ import { useEffect, useState } from "react";
 function Livecount() {
  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
  const API_TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;
+ const TOTAL_VOTERS = 577;
  const [ChampID, setChampID] = useState<string | undefined>(
    Cookies.get("ChampID")
    );
   const [jumlah, setJumlah] = useState(0);
+  const [jumlahPercentage, setJumlahPercentage] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +22,8 @@ function Livecount() {
         const data = await response.json();
         // Handle data
         console.log(data);
-        setJumlah(data.suara)
+        setJumlah(data.suara);
+        setJumlahPercentage(Number(((data.suara/TOTAL_VOTERS)*100).toFixed(2)));
       } catch (error) {
         console.error("Terjadi kesalahan saat melakukan request:", error);
       }
