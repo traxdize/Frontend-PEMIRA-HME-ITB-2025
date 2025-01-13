@@ -36,9 +36,9 @@ function Livecount() {
 
 
   return ( 
-    <main className="flex w-[100vw] h-[150vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
+    <main className="flex w-[100vw] h-[200vh]" style={{ background: 'linear-gradient(111.84deg, #DDC28E -1.42%, #77684C 65.2%)', boxShadow: '0px 4px 4px 0px #00000040' }}>
       {/* Bagian lain dari komponen */}
-      <div className="Background Hero w-full min-h-full h-fit sm:min-h-0 sm:h-[150vh] m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover bg-center flex">
+      <div className="Background Hero w-full min-h-full h-fit sm:min-h-0 sm:h-[200vh] m-auto overflow-hidden bg-[url('/mainbg.png')] bg-cover bg-center flex">
         <div className="livecount animate-popup m-auto block pt-10 pb-10 w-[500px] md:w-[700px] h-fit rounded-3xl transition-all ease-in-out duration-1000">
           <div className="tittlecontainer w-full h-[70px] flex">
             <div className="wrapper flex m-auto w-fit h-[60px]">
@@ -46,46 +46,46 @@ function Livecount() {
                 <div className="dot w-[60%] h-[60%] bg-[#B3403D] m-auto rounded-md animate-pulse"></div>
               </div>
               <div className="textSection h-full w-[200px] flex">
-                <h1 className="livecount m-auto text-[#B3403D] text-[30px] font-Montserrat font-extrabold">Live Count</h1>
+                <h1 className="livecount m-auto text-[#B3403D] text-[36px] font-Algerian font-extrabold">Live Count</h1>
               </div>
             </div>
           </div>
           <div className="subtitle w-full h-[40px] flex">
-            <h1 className="subtitle  text-[#552624] m-auto font-bold font-Montserrat pl-3 pr-3 text-center">PEMILIHAN KETUA HIMPUNAN HME ITB 2023/2024</h1>
+            <h1 className="subtitle  text-[#552624] m-auto text-[16pt] font-Algerian pl-3 pr-3 text-center">PEMILIHAN KETUA HIMPUNAN HME ITB 2024/2025</h1>
           </div>
           <div className="voteform block sm:flex w-full h-fit">
             <div className="kolomkiri w-full sm:w-[50%] h-fit flex p-8">
               <div 
-                className="card w-[200px] h-[260px] m-auto bg-white  rounded-xl overflow-hidden">
+                className="card w-[200px] h-[300px] m-auto bg-white  rounded-xl overflow-hidden">
                 <div className={`nomor w-full text-black h-[15%] flex`}>
                   <div className="nomor m-auto font-extrabold text-[18pt]">01</div>
                 </div>
                 <div className="gambar w-full h-[70%]  bg-[url('/poggy.png')] bg-cover bg-center"></div>
                 <div className={`nama text-black w-full h-[15%]  flex`}>
-                  <h2 className="nama m-auto text-[12pt] font-Montserrat">Poggy M. Gultom</h2>
+                  <h2 className="m-auto text-[14pt] font-Algerian">Poggy M. Gultom</h2>
                 </div>
               </div>
             </div>
             <div className="kolomkanan w-full sm:w-[50%] h-fit flex p-8">
               <div 
-                className="card w-[200px] h-[260px] m-auto bg-white  rounded-xl overflow-hidden">
-                <div className={`nomor text-black w-full h-[15%]  flex`}>
-                  <div className="nomor m-auto  font-extrabold text-[18pt]">02</div>
-                </div>
-                <div className="gambar w-full h-[70%]  bg-[url('/kotak.png')] bg-cover bg-center"></div>
-                <div className={`nama text-black w-full h-[15%]  flex`}>
-                  <h2 className="nama  m-auto text-[12pt] font-Montserrat">Kotak Kosong</h2>
-                </div>
+              className="card w-[200px] h-[300px] m-auto bg-white  rounded-xl overflow-hidden">
+              <div className={`nomor w-full text-black h-[15%] flex`}>
+                <div className="nomor m-auto font-extrabold text-[18pt]">02</div>
+              </div>
+              <div className="gambar w-full h-[70%]  bg-[url('/kotak.png')] bg-cover bg-center"></div>
+              <div className={`nama text-black w-full h-[15%]  flex`}>
+                <h2 className="m-auto text-[14pt] font-Algerian">Kotak Kosong</h2>
+              </div>
               </div>
             </div>
           </div>
           <div className="counter w-full h-fit mt-3 flex">
-            <div className="wrapper m-auto h-fit w-[200px] p-1">
-              <h1 className="judul w-full h-fit text-center text-[#552624] font-Montserrat font-extrabold text-[18pt]">TOTAL SUARA</h1>
-              <h1 className="judul w-full h-fit text-center text-[#552624] font-Montserrat font-extrabold text-[40pt]">{jumlah}</h1>
-              <div className="loadingbar m-auto h-[20px] overflow-hidden w-full bg-white">
+            <div className="wrapper m-auto h-fit w-[300px] p-1">
+              <h1 className="judul w-full h-fit text-center text-[#552624] font-Algerian font-extrabold text-[24pt]">TOTAL SUARA</h1>
+              <h1 className="judul w-full h-fit text-center text-[#552624] font-Algerian font-extrabold text-[40pt]">{jumlah}</h1>
+                <div className="loadingbar m-auto h-[20px] overflow-hidden w-full bg-[#997329] drop-shadow-md">
                 <div className={`progress relative h-full w-full overflow-hidden rounded-sm transition-all ease-in-out duration-200`}>
-              <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#D7FF38] to-[#a18721] rounded-full animate-slowspin m-auto"></div>
+              <div className="loadingbox relative top-[-100px] left-[-100px] h-[500px] w-[500px] bg-gradient-to-br from-[#FFC045] to-[#997329] rounded-full animate-slowspin m-auto"></div>
             </div>
           </div>
             </div>

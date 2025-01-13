@@ -225,9 +225,15 @@ function Vote() {
       <div className="Background Hero w-full h-full m-auto overflow-auto bg-[url('/mainbg.png')] bg-cover bg-center flex">
         <div className={`voteform w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] min-h-[80vh] h-fit m-auto mt-[20vh] shadow-2xl block p-5 sm:p-7 md:p-16 pt-10 bg-gradient-to-b from-white to-[#d8a44b00] via-white ${popupAnimation}`}>
           <div className="title block w-full text-center text-black font-Montserrat font-bold text-[13pt] sm:text-[18pt]">
-            <h1>SURAT SUARA</h1>
-            <h1>PEMIRA HME ITB</h1>
-            <h1>KETUA HIMPUNAN HME ITB 2024/2025</h1>
+            <h1 className="text-[20pt] sm:text-[25pt] font-Algerian bg-clip-text text-transparent bg-gradient-to-r from-[#77684C] to-[#DDC28E]">
+              SURAT SUARA
+            </h1>
+            <h1 className="text-[20pt] sm:text-[25pt] font-Algerian bg-clip-text text-transparent bg-gradient-to-r from-[#77684C] to-[#DDC28E]">
+              PEMIRA HME ITB
+            </h1>
+            <h1 className="text-[20pt] sm:text-[25pt] font-Algerian bg-clip-text text-transparent bg-gradient-to-r from-[#77684C] to-[#DDC28E]">
+              KETUA HIMPUNAN HME ITB 2024/2025
+            </h1>
           </div>
           <div className="voteform block sm:flex w-full h-fit pt-5">
             <div className="kolomkiri w-full sm:w-[50%] h-fit flex p-8">
@@ -237,9 +243,9 @@ function Vote() {
                 <div className={`nomor w-full ${styleCard1} h-[15%] border-solid border-[1.5px] border-black flex`}>
                   <div className="nomor m-auto font-extrabold text-[23pt]">01</div>
                 </div>
-                <div className="gambar w-full h-[70%] border-solid border-[1.5px] border-black bg-[url('/bright.png')] bg-cover bg-center"></div>
+                <div className="gambar w-full h-[70%] border-solid border-[1.5px] border-black bg-[url('/poggy.png')] bg-cover bg-center"></div>
                 <div className={`nama ${styleCard1} w-full h-[15%] border-solid border-[1.5px] border-black flex`}>
-                  <h2 className="nama m-auto text-[15pt] font-Montserrat">Poggy M. Gultom</h2>
+                  <h2 className="nama m-auto text-[15pt] font-Algerian">Poggy M. Gultom</h2>
                 </div>
               </div>
             </div>
