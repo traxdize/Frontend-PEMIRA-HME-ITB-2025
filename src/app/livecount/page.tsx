@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Livecount() {
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-  const TOTAL_VOTERS = 577;
+  const TOTAL_VOTERS = 569;
   const [ChampID, setChampID] = useState<string | undefined>(Cookies.get("ChampID"));
   const [jumlah, setJumlah] = useState(0);
   const [jumlahPercentage, setJumlahPercentage] = useState(0);
