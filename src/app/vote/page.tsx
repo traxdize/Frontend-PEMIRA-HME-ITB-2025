@@ -127,9 +127,9 @@ function Vote() {
                 <div className={`nomor w-full ${styleCard1} h-[15%] border-solid border-[1.5px] border-black flex`}>
                   <div className="nomor m-auto font-extrabold text-[23pt]">01</div>
                 </div>
-                <div className="gambar w-full h-[70%] border-solid border-[1.5px] border-black bg-[url('/poggy.png')] bg-cover bg-center"></div>
+                <div className="gambar w-full h-[70%] border-solid border-[1.5px] border-black bg-[url('/arran.png')] bg-cover bg-center"></div>
                 <div className={`nama ${styleCard1} w-full h-[15%] border-solid border-[1.5px] border-black flex`}>
-                  <h2 className="nama m-auto text-[16pt] font-Algerian">Poggy M. Gultom</h2>
+                  <h2 className="nama m-auto text-[16pt] font-Algerian">M. Rafi Ar Rantisi </h2>
                 </div>
               </div>
             </div>
