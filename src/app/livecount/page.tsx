@@ -57,7 +57,7 @@ function Livecount() {
           </div>
           <div className="subtitle w-full h-[40px] flex">
             <h1 className="subtitle text-[#552624] m-auto text-[16pt] font-Algerian pl-3 pr-3 text-center">
-              PEMILIHAN KETUA HIMPUNAN HME ITB 2024/2025
+              PEMILIHAN SENATOR HME ITB 2025/2026
             </h1>
           </div>
           <div className="voteform block sm:flex w-full h-fit">
