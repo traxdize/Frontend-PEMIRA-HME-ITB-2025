@@ -117,7 +117,7 @@ function Vote() {
           <div className="title block w-full text-center text-black font-Algerian font-bold text-[14pt] sm:text-[20pt]">
             <h1 className="">SURAT SUARA</h1>
             <h1 className="">PEMIRA HME ITB</h1>
-            <h1 className="">KETUA HIMPUNAN HME ITB 2024/2025</h1>
+            <h1 className="">SENATOR HME ITB 2025/2026</h1>
           </div>
           <div className="voteform block sm:flex w-full h-fit pt-5">
             <div className="kolomkiri w-full sm:w-[50%] h-fit flex p-8">
