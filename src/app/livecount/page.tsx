@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Livecount() {
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-  const TOTAL_VOTERS = 547;
+  const TOTAL_VOTERS = 518;
   const [ChampID, setChampID] = useState<string | undefined>(Cookies.get("ChampID"));
   const [jumlah, setJumlah] = useState(0);
   const [jumlahPercentage, setJumlahPercentage] = useState(0);
@@ -66,9 +66,9 @@ function Livecount() {
                 <div className="nomor w-full text-black h-[15%] flex">
                   <div className="nomor m-auto font-extrabold text-[18pt]">01</div>
                 </div>
-                <div className="gambar w-full h-[70%] bg-[url('/poggy.png')] bg-cover bg-center"></div>
+                <div className="gambar w-full h-[70%] bg-[url('/arran.png')] bg-cover bg-center"></div>
                 <div className="nama text-black w-full h-[15%] flex">
-                  <h2 className="m-auto text-[14pt] font-Algerian">Poggy M. Gultom</h2>
+                  <h2 className="m-auto text-[14pt] font-Algerian">M. Rafi Ar Rantisi</h2>
                 </div>
               </div>
             </div>
